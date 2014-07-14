@@ -1,0 +1,27 @@
+application: gifinbox
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+libraries:
+- name: ssl
+  version: latest
+
+handlers:
+
+- url: /tasks/update
+  script: gifalyzr-web.application
+  login: admin
+
+- url: /gifs
+  static_dir: gifs
+
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js
+
+- url: /.*
+  script: gifinbox.application

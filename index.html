@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Gifs that arrive in my inbox</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+	{% for x in lst %}
+	<div>
+	    <p>{{x.label}}</p>
+	    <img data-src="{{x.gif}}">
+	</div>
+	{% endfor %}
+	<script src="js/main.js"></script>
+</body>
+</html>

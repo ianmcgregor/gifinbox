@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+div {
+    position: relative;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+p {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: #fff;
+    background: #e03875;
+    font-family: Georgia, sans-serif;
+    font-size: 0.6rem;
+    padding: 0.5em 0.75em;
+}
+
+@media (min-width: 800px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  p {
+    font-size: 1.4rem;
+  }
+}
